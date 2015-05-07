@@ -1,0 +1,22 @@
+.gallery__row {
+}
+
+.gallery__image {   
+	max-width: 100%;
+}
+
+.gallery__image--logo {
+	width: 50%;
+}
+
+.gallery__item {
+	height: rhythm(11);
+	@include margin-trailer(1);
+	overflow: hidden;
+	@include media(extra-small) {
+		height: rhythm(9);
+    }
+    @include media(small) {
+		height: rhythm(7);
+    }
+}

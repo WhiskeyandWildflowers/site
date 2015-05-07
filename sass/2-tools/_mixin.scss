@@ -1,0 +1,23 @@
+@mixin font($font-family) {
+    @if $font-family == serif {
+        font-family: "Merriweather", "Georgia", serif;
+    }
+    @elseif $font-family == sans {
+        font-family: "Lato", "Trebuchet", sans-serif;
+    }
+    @elseif $font-family == display {
+        font-family: "Playfair Display", "Bodoni MT", sans-serif;
+    }
+}
+@mixin media($type) {
+    @if $type == small {
+        @media only screen and (min-width: $screen--large) {
+            @content;
+        }
+    }
+    @elseif $type == extra-small {
+        @media only screen and (min-width: $screen--medium) {
+            @content;
+        }
+    }
+}

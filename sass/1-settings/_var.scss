@@ -1,0 +1,69 @@
+////////////////////////////////////////////
+//
+//  Typography
+$base-font-size: 16px;
+$base-line-unit: 1.563;
+$base-line-height: $base-font-size * $base-line-unit;
+
+// $small-font-size: 14px;
+
+$rhythm-unit: "em";
+$round-to-nearest-half-line: true;
+
+$h1: 2.441;
+$h2: 1.953;
+$h3: 1.563;
+$h4: 1.25;
+$h5: 1;
+$h6: .8;
+
+////////////////////////////////////////////
+//
+//  Layout
+$screen--large: 50em;
+$screen--medium: 32em;
+
+$grid__gutter--width: rhythm(.5);
+
+
+////////////////////////////////////////////
+//
+//  Color
+
+// $purple--dark: #703030;
+$purple--dark: #7E589F;
+$purple--medium: #C77966;
+$purple--light: #C3B8BA;
+$grey--dark: #2F343B;
+$grey--light: #CAC8C1;
+$yellow--light: #E3CDA4;
+$green: #5A8C66;
+$green--light: #cEEee0;
+
+$primary__color: $purple--medium;
+$primary__color--light: $grey--dark;
+
+$secondary__color: $purple--dark;
+$secondary__color--light: $purple--light;
+
+$tertiary__color: $green;
+
+$neutral__color: $grey--dark;
+$neutral__color--light: $grey--light;
+
+////////////////////////////////////////////
+//
+//  Local
+$body--color: $neutral__color;
+$body--border: $neutral__color--light;
+$link--color: white;
+
+$heading--primary--color: desaturate(lighten($secondary__color, 10%), 10%);
+
+$nav__list--border: $neutral__color--light;
+$nav__link--color: darken($neutral__color--light, 20%);
+$nav__link--active--color: desaturate(lighten($secondary__color, 10%), 10%);
+
+$social__link--color: $primary__color;
+
+$copyright--color: $primary__color;

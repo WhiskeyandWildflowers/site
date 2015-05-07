@@ -1,0 +1,12 @@
+.heading {
+    & + .grid {
+        @include margin-leader(1);
+    }
+}
+
+.heading--primary {
+    @extend .heading;  
+    color: $heading--primary--color;  
+    @include font(serif);
+    font-weight: 700;
+}

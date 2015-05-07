@@ -1,0 +1,16 @@
+.social {
+
+}
+.social__list {
+	text-align: center;
+}
+.social__item {
+	display: inline-block;
+}
+.social__link {
+	display: block;
+	color: $social__link--color;
+	&:hover, &:active, &:focus {
+		color: darken($social__link--color, 10%);
+	}
+}

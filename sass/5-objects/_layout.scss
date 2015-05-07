@@ -1,0 +1,26 @@
+%full__height {
+    width: 100%;
+    height: 100%;
+}
+
+html, body, main {
+    @extend %full__height;
+}
+
+.layout__hero {
+    @include padding-leader(2);
+    @include box-sizing(border-box);
+}
+
+.layout__hero--gallery {
+    @extend .layout__hero;
+    @include padding-trailer(2);
+}
+
+.layout__nav {
+    @include box-sizing(border-box);
+}
+
+.layout__footer {
+    @include rhythm-padding(2);
+}
